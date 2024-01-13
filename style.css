@@ -1,0 +1,87 @@
+html, body
+{
+  height: 100%;
+  margin: 0;
+}
+
+body
+{
+background-color: lightcoral;
+}
+
+.header
+{
+	color: white;font-family:'alkatra';font-size: 50px;letter-spacing: 1px;margin-top: 80px;
+}
+.login_div
+{
+	background: rgba(255,255,255,0.8);float: none;border-radius: 15px;
+}
+#login_button
+{
+	width: 80%;border-radius: 15px;
+}
+.line{
+  height: 6px;
+  background-color: black;
+  width: 70px;
+  margin: 8px auto;
+}
+.links{
+  padding-left: 33px;
+  padding-right: 25px;
+  display:inline;
+  font-size: 25px;
+  font-family: 'Alkatra', cursive;
+}
+.links:hover{
+  font-size: 30px;
+  text-decoration: underline;
+}
+#writings a{
+  text-decoration:underline !important;
+  color: darkseagreen !important;
+}
+.line{
+  height: 6px;
+  background-color: black;
+  width: 70px;
+  margin:8px auto;
+}
+.my_nav_bar{
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+}
+h3
+{
+  font-family: 'alkatra';
+  font-size: 30px;
+}
+h1
+{
+  font-family: 'alkatra';
+  font-size: 45px;
+}
+h2
+{
+  font-family: 'alkatra';
+  font-size: 40px;
+}
+.room_name
+{
+	cursor: pointer;
+	font-size: 20px;
+}
+
+
+#logout
+{
+	font-size: 20px; float: right;
+}
+
+
+#output
+{
+	padding: 10px; width:80%;background: rgba(255,255,255,0.8);border-radius: 15px;
+}

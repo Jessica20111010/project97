@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Covid-19 Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500&display=swap" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="main.js"></script>
+
+</head>
+
+<body>
+
+        <nav class="navbar-inverse my_nav_bar">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#info">Information on Covid</a></li>
+                <li><a href="#types">Different types of Covid</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#send">Send something about Covid-19</a></li>
+                <li><a href="#"></a></li>
+    
+            </ul>
+            <button onclick="logout()" id="logout" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
+        </div>
+    </nav>
+    <section id="info">
+        <br><br>
+        <center>
+        <h1>Information</h1>
+        <br><br>
+        <iframe src="https://cdc.gov/coronavirus/2019-ncov/index.html" width="1000" height="1200"></iframe>
+    </center>
+    </section>
+    <section id="types">
+        <br><br>
+        <center>
+            <h1>Types</h1>
+            <br><br>
+            <h2>Common human coronaviruses</h2>
+            <h3>1. 229E (alpha coronavirus)</h3>
+            <h3>2. NL63 (alpha coronavirus)</h3>
+            <h3>3. OC43 (beta coronavirus)</h3>
+            <h3>4. HKU1 (beta coronavirus)</h3>
+            <br>
+            <h2>Other human coronaviruses</h2>
+            <h3>5. MERS-CoV (the beta coronavirus that causes Middle East Respiratory Syndrome, or MERS)</h3>
+            <h3>6. SARS-CoV (the beta coronavirus that causes severe acute respiratory syndrome, or SARS)</h3>
+            <h3>7. SARS-CoV-2 (the novel coronavirus that causes coronavirus disease 2019, or COVID-19)</h3>
+            <br><br>
+            <h3>People around the world commonly get infected with human coronaviruses 229E, NL63, OC43, and HKU1.</h3>
+            <h3>                Sometimes coronaviruses that infect animals can evolve and make people sick and become a new human coronavirus. Three recent examples of this are 2019-nCoV, SARS-CoV, and MERS-CoV</h3>
+            <br><br>
+    </section>
+</center>
+<section id="videos">
+    <br><br>
+    <center>
+        <h1>Videos</h1>
+        <br><br>
+        <iframe width="1000" height="600" src="https://www.youtube.com/embed/jpEcRepEGLM?si=fhezKf6bPVD0IrVO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<br><br>
+        <iframe width="1000" height="600" src="https://www.youtube.com/embed/w5HvxsOo00E?si=1EUmrwHKImPGCojD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </center>
+</section>
+<br><br><br>
+<section id="send">
+    <center>
+        <br><br>
+        <h1>Send something about Covid-19</h1>
+        <br><br>
+        <div class="container">
+            <center>
+                <div id="output" style="text-align: left;margin-bottom: 70px;"> </div>
+            </center>
+        </div>
+        
+        <center>
+            <div class="input_div_message_page">
+                <label>Send:</label>
+                <input type="text" id="msg" placeholder="Message" class="form-control" >
+                <button class="btn btn-success" onclick="send()" >Send</button>
+            </div>
+        </center>
+    </center>
+</section>
+    </body>
